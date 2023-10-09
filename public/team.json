@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "name": "Emily Johnson",
+      "position": "Event Planner",
+      "email": "emily.johnson@example.com",
+      "phone": "+1 (555) 123-4567",
+      "profile_picture": "https://i.ibb.co/QKmdscc/joyful-event-manager-banquet-hall.jpg",
+      "bio": "Passionate event planner with 5+ years of experience specializing in weddings and anniversaries. Dedicated to turning dreams into reality."
+    },
+    {
+      "id": 2,
+      "name": "Daniel Smith",
+      "position": "Event Coordinator",
+      "email": "daniel.smith@example.com",
+      "phone": "+1 (555) 987-6543",
+      "profile_picture": "https://i.ibb.co/VjWBp10/guy-black-suit-male-restaurant.jpg",
+      "bio": "Detail-oriented event coordinator with expertise in corporate events and product launches. Adept at executing clients' visions."
+    },
+    {
+      "id": 3,
+      "name": "Sophia Martinez",
+      "position": "Decor Specialist",
+      "email": "sophia.martinez@example.com",
+      "phone": "+1 (555) 555-6789",
+      "profile_picture": "https://i.ibb.co/1bJgvBk/serious-african-american-lady-with-pen-standing-near-model-building-table.jpg",
+      "bio": "Talented decor specialist known for creative flair and impeccable taste. Transforms venues into enchanting spaces."
+    },
+    {
+      "id": 4,
+      "name": "Michael Davis",
+      "position": "Logistics Manager",
+      "email": "michael.davis@example.com",
+      "phone": "+1 (555) 456-7890",
+      "profile_picture": "https://i.ibb.co/6YYZnmb/cheerful-successful-middle-aged-manager-businessman-holding-tablet-computer-large-warehouse-organizi.jpg",
+      "bio": "Logistics wizard with expertise in coordinating vendors, schedules, and resources. Detail-oriented problem solver."
+    },
+    {
+      "id": 5,
+      "name": "Olivia Baker",
+      "position": "Chef",
+      "email": "olivia.baker@example.com",
+      "phone": "+1 (555) 234-5678",
+      "profile_picture": "https://i.ibb.co/pRQR0LQ/male-cook-standing-kitchen-presenting-delicious-dish.jpg",
+      "bio": "Skilled chef crafting gourmet menus tailored to event themes. Passionate about culinary delights."
+    },
+    {
+      "id": 6,
+      "name": "David Clark",
+      "position": "Caterer",
+      "email": "david.clark@example.com",
+      "phone": "+1 (555) 345-6789",
+      "profile_picture": "https://i.ibb.co/VLzzVMc/caterer.jpg",
+      "bio": "Experienced caterer dedicated to providing impeccable service and delicious meals. Collaborative menu curator."
+    }
+  ]
