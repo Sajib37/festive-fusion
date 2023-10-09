@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useParams } from 'react-router-dom';
 
 const ServiceDetails = () => {
@@ -24,6 +25,9 @@ const ServiceDetails = () => {
 
     return (
         <div className='my-12'>
+            <Helmet>
+                <title>Festive Fusion || service details</title>
+            </Helmet>
             <h1 className='text-center text-2xl md:text-4xl font-bold mb-8'>Event details: </h1>
             <img className='w-full h-[40vh] md:h-[70vh] lg:h-[80vh]' src={image} alt={service_type} />
             <div className='space-y-2 px-2 text-justify max-w-screen-xl mx-auto'>

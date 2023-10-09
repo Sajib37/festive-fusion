@@ -4,6 +4,7 @@ import { useAuth } from "../../AuthProvider/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRef, useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
     const { googleLogin, emailLogin, resetPassword } = useAuth();
@@ -59,6 +60,9 @@ const Login = () => {
 
     return (
         <section className="px-2 my-8 md:my-12">
+            <Helmet>
+                <title>Festive Fusion || Login</title>
+            </Helmet>
             <section className="border-2 border-slate-400 px-4 py-6 md:p-8 max-w-sm md:max-w-md lg:max-w-lg mx-auto rounded-md">
                 <h1 className="text-center font-bold text-2xl md:text-4xl">
                     Login to your account
