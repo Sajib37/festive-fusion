@@ -5,9 +5,9 @@ const Team = () => {
 
     const teamMembers = useLoaderData();
     return (
-        <div className="mt-8 md:mt-12 mb-4">
-            <h1 className='text-3xl md:text-5xl font-bold text-center mb-4 font-serif'>Our Team Members</h1>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
+        <div className="mt-0 md:mt-8 mb-4 max-w-screen-xl mx-auto">
+            <h1 className='text-3xl md:text-5xl font-bold text-center mb-8 font-serif'>Our Team Members</h1>
+            <div className="grid grid-cols-1 px-2 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
                 
                 {
                     teamMembers.map((team,idx)=><TeamMember key={idx} team={team}></TeamMember>)

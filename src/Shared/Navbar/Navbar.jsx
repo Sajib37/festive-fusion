@@ -83,7 +83,7 @@ const Navbar = () => {
         </>
     );
     return (
-        <div className="max-w-screen-xl border mx-auto relative  mb-8">
+        <div className="max-w-screen-xl h-20 mx-auto relative  mb-8">
             <div className="w-full h-full absolute top-0 left-0 z-30">
                 <div className="navbar">
                     <div className="navbar-start">
