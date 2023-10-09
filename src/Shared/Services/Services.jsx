@@ -29,7 +29,7 @@ const Services = () => {
                     allEvents.slice(0,displayData).map((service,idx)=><Service key={idx} service={service}></Service>)
                 }
             </div>
-            <Link onClick={handleSeemore} to='/services' className={`mx-auto p-2 bg-teal-400 font-semibold rounded-2xl w-28 text-center border-2 mt-2 ${displayData==allEvents.length? 'hidden' : 'block'}`}>See More</Link>
+            <Link onClick={handleSeemore} to='/services' className={`mx-auto p-2 bg-teal-400 font-semibold rounded-2xl w-28 text-center border-2 mt-6 ${displayData==allEvents.length? 'hidden' : 'block'}`}>See More</Link>
         </div>
     );
 };

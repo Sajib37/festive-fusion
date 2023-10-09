@@ -1,7 +1,7 @@
 const TeamMember = ({ team }) => {
     const { name, position, email, phone, profile_picture, bio } = team;
     return (
-        <div className="card card-compact  bg-base-100 shadow-xl rounded-md">
+        <div className="card card-compact  bg-base-100 shadow-xl rounded-md" data-aos="fade-up-left" data-aos-duration="2000">
             <figure>
                 <img
                     src={profile_picture}

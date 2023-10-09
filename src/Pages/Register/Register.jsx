@@ -74,7 +74,7 @@ const Register = () => {
                     {/* <p className="text-red-600 font-semibold">Forgot password?</p> */}
                     <button name="submit" className="btn block w-full mt-4"> Register</button>
                 </form>
-                <button onClick={handleGoogleLogin} className="btn w-full mt-2 flex gap-2"><BsGoogle className="text-xl"></BsGoogle> Log in With Google</button>
+                <button onClick={handleGoogleLogin} className="btn w-full mt-2 flex gap-2 bg-lime-700 text-white"><BsGoogle className="text-xl"></BsGoogle> Log in With Google</button>
                 <p className="mt-4 font-medium ">Aready Have an account?<Link to='/login' className="font-bold text-green-600"> Login</Link></p>
                 <ToastContainer />
             </section>

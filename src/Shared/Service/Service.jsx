@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Service = ({ service }) => {
     const {id, image ,service_type ,short_description,price_range}=service
     return (
-        <div className="card card-compact max-w-md bg-base-100 shadow-x rounded-lg mx-auto">
+        <div className="card card-compact max-w-md bg-base-100 shadow-x rounded-lg mx-auto" data-aos="zoom-in" data-aos-duration="2000">
             <figure>
                 <img
                     src={image}

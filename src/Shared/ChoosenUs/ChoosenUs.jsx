@@ -3,6 +3,8 @@ import decor from "/images/decor.jpg";
 import flexib from "/images/flexibility.png";
 import exp from "/images/guest_exp.jpg";
 import satisfaction from "/images/satisfaction.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const bg_style = {
     backgroundImage: `url("https://i.ibb.co/2PqSbPf/decorated-banquet-hall-with-served-round-table-with-hydrangea-centerpiece-chiavari-chairs-1.jpg")`,
@@ -21,7 +23,9 @@ const setOverlay = {
 
 const ChoosenUs = () => {
     return (
-        <div className="w-full h-[100vh] md:h-[80vh] lg:h-[60vh] py-8 relative my-12">
+        <div className="w-full h-[100vh] md:h-[80vh] lg:h-[70vh] py-8 relative  my-12 md:my-20" data-aos="flip-right"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="3000">
             <div
                 className="w-full h-full absolute top-0 left-0"
                 style={bg_style}
@@ -78,3 +82,4 @@ const ChoosenUs = () => {
 export default ChoosenUs;
 
 // https://i.ibb.co/2PqSbPf/decorated-banquet-hall-with-served-round-table-with-hydrangea-centerpiece-chiavari-chairs-1.jpg
+// <div ">

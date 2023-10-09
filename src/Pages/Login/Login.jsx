@@ -58,7 +58,7 @@ const Login = () => {
     };
 
     return (
-        <section className="px-2 mt-8 md:mt-12">
+        <section className="px-2 my-8 md:my-12">
             <section className="border-2 border-slate-400 px-4 py-6 md:p-8 max-w-sm md:max-w-md lg:max-w-lg mx-auto rounded-md">
                 <h1 className="text-center font-bold text-2xl md:text-4xl">
                     Login to your account
@@ -100,7 +100,7 @@ const Login = () => {
                 </form>
                 <button
                     onClick={handleGoogleLogin}
-                    className="btn w-full mt-2 flex gap-2"
+                    className="btn w-full mt-2 flex gap-2 bg-lime-700 text-white"
                 >
                     <BsGoogle className="text-xl"></BsGoogle> Log in With Google
                 </button>
