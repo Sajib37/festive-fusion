@@ -22,8 +22,8 @@ const Services = () => {
         }
     }
     return (
-        <div className='mt-8 md:mt-12 mb-4'>
-            <h1 className='text-3xl md:text-5xl font-bold text-center mb-4'>Our Services</h1>
+        <div className='mt-8 md:mt-0 mb-4 max-w-screen-xl mx-auto'>
+            <h1 className='text-3xl md:text-5xl font-bold text-center mb-4 font-serif lg:my-6'>Our Services</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-2 '>
                 {
                     allEvents.slice(0,displayData).map((service,idx)=><Service key={idx} service={service}></Service>)

@@ -10,23 +10,22 @@ const Navbar = () => {
     const [displayName, setDisplayName] = useState(null);
     const navigate = useNavigate();
 
-
     useEffect(() => {
         if (user !== null) {
-            setDisplayName(user.displayName)
-            setPhotoURL(user.photoURL)
+            setDisplayName(user.displayName);
+            setPhotoURL(user.photoURL);
         }
-    },[user])
+    }, [user]);
 
     const handleLogout = () => {
         logOut()
-            .then(result => {
-                navigate('/')
+            .then((result) => {
+                navigate("/");
             })
-            .catch(error => {
-            toast.error('Logout Failed')
-        })
-    }
+            .catch((error) => {
+                toast.error("Logout Failed");
+            });
+    };
     const navLinks = (
         <>
             <li>
@@ -84,68 +83,76 @@ const Navbar = () => {
         </>
     );
     return (
-        <div>
-            <div className="navbar bg-base-100">
-                <div className="navbar-start">
-                    <div className="dropdown">
-                        <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-5 w-5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
+        <div className="max-w-screen-xl border mx-auto relative  mb-8">
+            <div className="w-full h-full absolute top-0 left-0 z-30">
+                <div className="navbar">
+                    <div className="navbar-start">
+                        <div className="dropdown">
+                            <label
+                                tabIndex={0}
+                                className="btn btn-ghost lg:hidden"
                             >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M4 6h16M4 12h8m-8 6h16"
-                                />
-                            </svg>
-                        </label>
-                        <ul
-                            tabIndex={0}
-                            className="menu menu-sm font-semibold dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-                        >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="h-5 w-5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth="2"
+                                        d="M4 6h16M4 12h8m-8 6h16"
+                                    />
+                                </svg>
+                            </label>
+                            <ul
+                                tabIndex={0}
+                                className="menu menu-sm font-semibold dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                            >
+                                {navLinks}
+                            </ul>
+                        </div>
+                        <a className="btn btn-ghost hidden md:block normal-case text-xl md:text-3xl font-serif">
+                            Festive Fusion
+                        </a>
+                        <a className="btn btn-ghost md:hidden md:block normal-case text-xl md:text-3xl font-serif">
+                            Fusion
+                        </a>
+                    </div>
+                    <div className="navbar-center hidden lg:flex">
+                        <ul className="menu menu-horizontal px-1 gap-2 font-semibold">
                             {navLinks}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost hidden md:block normal-case text-xl md:text-3xl font-serif">
-                        Festive Fusion
-                    </a>
-                    <a className="btn btn-ghost md:hidden md:block normal-case text-xl md:text-3xl font-serif">
-                        Fusion
-                    </a>
+                    <div className="navbar-end">
+                        {user ? (
+                            <div className="flex gap-1">
+                                <div className="flex items-center gap-1">
+                                    {photoURL && (
+                                        <img
+                                            className="w-10 h-10 rounded-full"
+                                            src={photoURL}
+                                        ></img>
+                                    )}
 
-                </div>
-                <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 gap-2 font-semibold">
-                        {navLinks}
-                    </ul>
-                </div>
-                <div className="navbar-end">
-                    
-                    {user ? (
-                        <div className="flex gap-1">
-                            <div className="flex items-center gap-1">
-                                {
-                                    photoURL && <img className="w-10 h-10 rounded-full" src={photoURL}></img>
-                                }
-                                
-                                <h1 className="text-lg font-medium hidden md:block">{ displayName}</h1>
+                                    <h1 className="text-lg font-medium hidden md:block">
+                                        {displayName}
+                                    </h1>
+                                </div>
+                                <button className=" btn" onClick={handleLogout}>
+                                    Log Out
+                                </button>
                             </div>
-                            <button className=" btn" onClick={handleLogout}>Log Out</button>
-                        </div>
-                        
-                    ) : (
-                        <Link to="/login" className="btn">
-                            Login
-                        </Link>
-                    )}
-
+                        ) : (
+                            <Link to="/login" className="btn">
+                                Login
+                            </Link>
+                        )}
+                    </div>
+                    <ToastContainer />
                 </div>
-                <ToastContainer />
             </div>
         </div>
     );
