@@ -65,7 +65,7 @@ const Register = () => {
                 <title>Festive Fusion || Register</title>
             </Helmet>
             <section className="border-2 border-slate-400 px-4 py-6 md:p-8 max-w-sm md:max-w-md lg:max-w-lg mx-auto rounded-md">
-                <h1 className="text-center font-bold text-2xl md:text-4xl">Login to your account</h1>
+                <h1 className="text-center font-bold text-2xl md:text-4xl">Create a New Account</h1>
                 <form onSubmit={handleCreateUser} className="mt-4">
                     <label className="text-base md:text-lg font-semibold mb-3">Name:</label>
                     <input name="name" type="text" placeholder="Enter your Name" className="input input-bordered w-full mb-3" required/>

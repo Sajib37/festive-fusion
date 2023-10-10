@@ -1,8 +1,21 @@
-# React + Vite
+# PROJECT NAME: Festive Fusion
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Live Link: https://festive-fusion-c4e64.web.app/
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Feature:
+
+#### 1. Easy Event Planning: 
+Users by visiting this website ,can Understand in every event manegement cost and details. So, Users easily make a plan for their event.
+
+#### 2.Get to know about Team:
+This project show details almost every members of a event management. So, Users easily can known about the team by visiting the details of team members.
+
+#### 3. Contact With Team Member:
+Almost every team members bio-data and contact information showed in this website. The use can easily recieved the conatact information and can contact with them.
+
+#### 4. Get to know about event feature:
+Users can see details in every event by clicking show details button. Here, Users can see the event feature and details.
+
+#### 5. Testimonials :
+This project show the previous customer review in testimonial route. User Can easily see the previous customer review and can decide why they can choose this event.

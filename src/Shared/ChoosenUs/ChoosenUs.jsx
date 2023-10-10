@@ -1,5 +1,5 @@
 import React from "react";
-import decor from "/images/decor.jpg";
+import decor from "../../../public/images/decor2.png";
 import flexib from "/images/flexibility.png";
 import exp from "/images/guest_exp.jpg";
 import satisfaction from "/images/satisfaction.png";
@@ -7,7 +7,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const bg_style = {
-    backgroundImage: `url("https://i.ibb.co/2PqSbPf/decorated-banquet-hall-with-served-round-table-with-hydrangea-centerpiece-chiavari-chairs-1.jpg")`,
+    backgroundImage: `url("https://i.ibb.co/rm2vQNQ/nicholas-green-n-Pz8akk-Um-DI-unsplash.jpg")`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -18,7 +18,7 @@ const setOverlay = {
     left: 0,
     width: "100%",
     height: "100%",
-    backgroundColor: "rgba(0, 0,0, 0.6)",
+    backgroundColor: "rgba(0, 0,0, 0.8)",
 };
 
 const ChoosenUs = () => {

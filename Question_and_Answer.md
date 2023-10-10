@@ -21,7 +21,7 @@ console.log(greetign);
 #### Answer: B: `ReferenceError: greetign is not defined`
 
 
-<i>Here declared greeting, but trying to assign a value to greetign. JavaScript is case-sensitive, so greetign is treated as a different variable.that's why here given greetign is not defined</i>
+<i>Here declared greeting, but trying to assign a value to greetign. JavaScript is case-sensitive, so greetign is treated as a different variable.Because , 'greeting' and 'greetign' is not the same..that's why here given greetign is not defined</i>
 
 </p>
 </details>
@@ -73,7 +73,7 @@ console.log(food);
 
 #### Answer: A: `['🍕', '🍫', '🥑', '🍔']`
 
-<i>Here, in food variable store a array. For this, by consoling this variable, the output displayed this array .</i>
+<i>Here, in food variable store a array. For this, by consoling this variable, the output displayed this array .And the stored array is in option A. So, the answer is option A</i>
 
 </p>
 </details>
@@ -99,7 +99,7 @@ console.log(sayHi());
 #### Answer: D: `ReferenceError`
 
 
-<i>Here, sayHi() function takes a parameter. but, when we call this function, we did not the argument. this is why, Reference error will be showed. </i>
+<i>Here, sayHi() function takes a parameter. but, when we call this function, we did not pass the argument. this is why, Reference error will be showed. </i>
 
 </p>
 </details>

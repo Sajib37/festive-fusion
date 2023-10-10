@@ -1,6 +1,6 @@
 const Banner = () => {
     const bg_style = {
-        backgroundImage: `url("https://i.ibb.co/9stzjqq/diverse-business-people-dinner-party-1.jpg")`,
+        backgroundImage: `url("https://i.ibb.co/YBYmf3f/andreas-ronningen-S2-Yss-Lw97l4-unsplash.jpg")`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -12,7 +12,7 @@ const Banner = () => {
         left: 0,
         width: '100%',
         height: '100%',
-        backgroundColor: 'rgba(255, 255, 255, 0.6)'
+        backgroundColor: 'rgba(255, 255, 255, 0.5)'
     }
     
     return (
